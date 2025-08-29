@@ -27,7 +27,6 @@ const SingleMovie = () => {
   // Fetch movie details
   useEffect(() => {
     getMovie(parseInt(id));
-    console.log(data);
   }, [id]);
 
   // Check if movie is watched

@@ -53,7 +53,9 @@ const Home = () => {
               </div>
               <div className="w-full grid lg:grid-cols-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-5 gap-3 justify-center mb-10">
                 {isRecLoading ? (
-                  <Spinner loading={isRecLoading} />
+                  <div className="w-screen flex justify-center items-center">
+                    <Spinner loading={isRecLoading} />
+                  </div>
                 ) : aiRecommendations.length === 0 ? (
                   <h1 className="text-white  w-[100vw]">
                     No Recommendations Yet
